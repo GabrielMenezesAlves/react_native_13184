@@ -7,7 +7,7 @@ export default function App() {
   const [produto, setProduto] = useState({ nome: '', preco: '', descricao: '' })
   const [produtos, setProdutos] = useState([])
 
-  const APIURL = 'http://192.168.68.103:3001/produtos'
+  const APIURL = 'http://192.168.18.5:3001/produtos'
 
   const listar = async () => {
     const response = await axios.get(APIURL)
